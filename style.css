@@ -25,17 +25,15 @@ body {
 }
 
 .container {
-  background: linear-gradient(
-    rgba(0,0,0,0.2),
-    rgba(0,0,0,0.2)
-  ), url("./dragonBallHeader/img/sagaImg/sagaSaiajin.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("./dragonBallHeader/img/sagaImg/sagaSaiajin.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 
-  height: 96%;
-  width: 50%;
-  zoom: .7;
+  height: 800px;
+  width: 600px;
+  zoom: 0.7;
   border-radius: 15px;
   padding: 4% 6%;
   margin: 100px;
@@ -132,7 +130,6 @@ form button:hover {
   background-color: #111;
   cursor: pointer;
 }
-/*Form end*/
 
 .sign-up {
   display: flex;
@@ -145,4 +142,29 @@ form button:hover {
 
 a {
   color: #d6d3d3;
+}
+/*Form end*/
+
+/*media querie */
+@media (max-width: 768px) {
+  .container {
+    width: 500px;
+  }
+
+  .social-media div {
+    width: 50%;
+    font-size: 15px;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 425px) {
+  .container {
+    width: 400px;
+    height: 700px;
+    background: transparent;
+  }
+}
+
+@media (max-width: 375px) {
 }
