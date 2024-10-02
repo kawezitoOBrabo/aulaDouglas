@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="calc-style">
+        <div id="calculador">
+            <div id="result"></div>
+
+            <button id="delete" class="botao-especial-estilizado"><i class="fa-solid fa-x"></i></button>
+            <button id="percent" class="botao-especial-estilizado"><i class="fa-solid fa-percent"></i></button>
+            <button id="divide" class="botao-especial-estilizado"><i class="fa-solid fa-divide"></i></button>
+            <button id="all-delete" class="botao-especial-estilizado"><i class="fa-solid fa-c"></i></button>
+
+            <hr>
+            <button id="seven" class="botao-normal-estilizado"><i class="fa-solid fa-7"></i></button>
+            <button id="eight" class="botao-normal-estilizado"><i class="fa-solid fa-8"></i></button>
+            <button id="nine" class="botao-normal-estilizado"><i class="fa-solid fa-9"></i></button>
+            <button id="multiply" class="botao-especial-estilizado"><i class="fa-solid fa-xmark"></i></button>
+            <hr>
+
+            <button id="four" class="botao-normal-estilizado"><i class="fa-solid fa-4"></i></button>
+            <button id="five" class="botao-normal-estilizado"><i class="fa-solid fa-5"></i></button>
+            <button id="six" class="botao-normal-estilizado"><i class="fa-solid fa-6"></i></button>
+            <button id="minus" class="botao-especial-estilizado"><i class="fa-solid fa-minus"></i></button>
+            <hr>
+
+            <button id="one" class="botao-normal-estilizado"><i class="fa-solid fa-1"></i></button>
+            <button id="two" class="botao-normal-estilizado"><i class="fa-solid fa-2"></i></button>
+            <button id="three" class="botao-normal-estilizado"><i class="fa-solid fa-3"></i></button>
+            <button id="plus" class="botao-especial-estilizado"><i class="fa-solid fa-plus"></i></button>
+            <hr>
+
+            <button id="zero" class="botao-normal-estilizado"><i class="fa-solid fa-0"></i></button>
+            <button id="point" class="botao-normal-estilizado"><i class="fas fa-circle fa-xs"></i></button>
+            <button id="equals" class="botao-especial-estilizado"><i class="fa-solid fa-equals"></i></button>
+        </div>
+
+        <script>
+            //botao-normal-estilizado
+            const zero = document.getElementById("zero");
+            const one = document.getElementById("one");
+            const two = document.getElementById("two");
+            const three = document.getElementById("three");
+            const four = document.getElementById("four");
+            const five = document.getElementById("five");
+            const six = document.getElementById("six");
+            const seven = document.getElementById("seven");
+            const eight = document.getElementById("eight");
+            const nine = document.getElementById("nine");
+
+            const list_normal = [zero, one, two, three, four, five, six, seven, eight, nine];
+
+            function click (event) {
+                const buttonId = event.target.id;
+                console.log("Botão clicado: ${buttonId} ");
+            }
+
+            list_normal.forEach(item => {
+                item.addEventListener("click", click);
+            });
+
+            //botao-especial-estilizado
+            const delete_var = document.getElementById("delete").value;
+            const percent = document.getElementById("percent").value;
+            const divide = document.getElementById("divide").value;
+            const all_delete = document.getElementById("all_delete");
+            const multiply = document.getElementById("multiply").value;
+            const minus = document.getElementById("minus").value;
+            const plus = document.getElementById("plus").value;
+
+            const list_especial = [delete_var, percent, divide, all_delete, multiply, minus, plus];
+
+            document.getElementById("equals").addEventListener(
+                "click", function (event) {
+                    event.preventDefault();
+                    const result = document.getElementById("result");
+                    result.textContent = "10";
+                }
+            );
+        </script>
+</body>
+
+</html>

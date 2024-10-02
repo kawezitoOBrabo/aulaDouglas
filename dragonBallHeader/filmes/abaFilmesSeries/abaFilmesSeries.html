@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <!-- Material Icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- Icone Logo -->
+    <link rel="icon" href="../img/headerImg/logo-dois.png" type="image/png" />
+    <!-- Link style.css -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Films Page</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="navegation">
+        <img src="../../img/headerImg/logo-um.png" alt="" height="100px" />
+        <nav>
+          <ul>
+            <li class="dropdow"><a href="../../index.html">Home</a></li>
+            <li class="dropdow">
+              <a href="../filmes.html">Films | Sagas</a>
+            </li>
+            <li class="dropdow">
+              <a href="../../produtos/produtos.html">Produtos</a>
+            </li>
+            <li class="dropdow"><a href="#">Personagens</a></li>
+            <li class="dropdow"><a href="#">Sobre</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="container-main">
+        <div class="card-container">
+          <div class="card">
+            <img id="img" src="" alt="" />
+            <div class="movie-details">
+              <h2>Sinopse</h2>
+              <p id="sinopse"></p>
+              <h2>Duração</h2>
+              <p id="duracao"></p>
+              <h2>Ano de Lançamento</h2>
+              <p id="ano"></p>
+            </div>
+          </div>
+
+          <div class="container-iframe">
+            <iframe
+              width="840"
+              height="472"
+              src="//saborcaseiro.org/animesvicio.php?contentId=7B00367D099614A33AA9A980BA71E1F88EF21CE23E13BF3354357FA4DF008099349C1A32A7369729001A6DB4CB0B0C2A"
+              frameborder="0"
+              gesture="media"
+              allow="encrypted-media"
+              allowfullscreen
+            ></iframe>
+            <div class="iframe-controls">
+              <div class="arrow_left">
+                <i class="fas fa-angle-left"></i>
+              </div>
+              <a href="../filmes.html">
+                <div class="playlist">
+                  <i class="fas fa-list"></i>
+                </div>
+              </a>
+              <div class="arrow_right">
+                <i class="fas fa-angle-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button class="favorite-btn">
+          <i class="fas fa-heart"></i> Adicionar aos Favoritos
+        </button>
+
+        <div class="comments-section">
+          <h3>Avaliações e Comentários</h3>
+          <form>
+            <textarea placeholder="Deixe seu comentário..."></textarea>
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
+
+        <div class="related-movies">
+          <h2>Filmes Relacionados</h2>
+          <div class="movies">
+            <div class="movie-card">
+              <img
+                src="../../img/sagaImg/sagaCell.jpg"
+                alt="Filme Relacionado 1"
+              />
+              <h3>Filme Relacionado 1</h3>
+            </div>
+            <div class="movie-card">
+              <img
+                src="../../img/sagaImg/sagaCell.jpg"
+                alt="Filme Relacionado 2"
+              />
+              <h3>Filme Relacionado 2</h3>
+            </div>
+            <div class="movie-card">
+              <img
+                src="../../img/sagaImg/sagaCell.jpg"
+                alt="Filme Relacionado 3"
+              />
+              <h3>Filme Relacionado 3</h3>
+            </div>
+            <div class="movie-card">
+              <img
+                src="../../img/sagaImg/sagaCell.jpg"
+                alt="Filme Relacionado 4"
+              />
+              <h3>Filme Relacionado 4</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer_container">
+        <div class="footer_social_media">
+          <img src="../../img/headerImg/sagaClassica.jpeg" alt="Logo" />
+          <div class="social_media">
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="footer_main">
+          <div class="footer_films">
+            <h1>Filmes</h1>
+          </div>
+          <div class="footer_series">
+            <h1>Séries</h1>
+          </div>
+          <div class="footer_produto">
+            <h1>Produtos</h1>
+          </div>
+          <div class="footer_personagens">
+            <h1>Personagens</h1>
+            <a href="#">Personagem um</a>
+            <a href="#">Personagem dois</a>
+            <a href="#">Personagem três</a>
+          </div>
+        </div>
+        <hr class="footer_hr" />
+        <div class="footer_info">
+          <div class="email">
+            <i class="material-icons">email</i>
+            <p>emailTest123@teste.com</p>
+          </div>
+          <div class="copy">
+            <p>&copy; 2024 Autoria própria: Fandom de Dragon Ball</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- VLibras -->
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget("https://vlibras.gov.br/app");
+    </script>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
