@@ -75,6 +75,7 @@ nav button:hover {
 nav button i {
   font-size: 30px;
   visibility: visible; 
+  color: white;
 }
 
 nav ul {
@@ -255,6 +256,7 @@ main h1 a {
   width: 400px;
   border-radius: 20px;
   overflow: hidden;
+  padding: 0 0 0 100px;
 }
 
 .sobre_moldura img {
@@ -262,7 +264,7 @@ main h1 a {
 }
 
 .sobre_text_content {
-  width: 60%;
+  padding: 0 100px 0 100px;
 }
 
 .sobre_text_content h1 {
@@ -422,7 +424,7 @@ form textarea {
   margin-bottom: 10px;
   background-color: #113;
 }
-
+/*footer start*/
 footer {
   background-color: var(--footer-background);
   padding: 40px 0;
@@ -526,4 +528,80 @@ footer {
   text-align: center;
   font-size: 14px;
   margin-top: 10px;
+}
+/*footer end*/
+
+/*media querie*/
+@media (max-width: 768px) {
+  .sobre_moldura {
+    height: 400px;
+    width: 300px;
+  }
+
+  .sobre_text_content h1 {
+    font-size: 35px;
+  }
+
+  .text_content {
+    max-width: 80%;
+  }
+
+  .content {
+    top: 50%;
+    transform: translate(0, -40%);
+  }
+
+  .card {
+    height: 300px;
+    width: 270px;
+    border-radius: 12px;
+    padding: 0% 4%;
+  }
+
+  .card p {
+    font-size: 12px;
+  }
+
+  .card i {
+    font-size: 40px;
+  }
+
+  .card h1 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .sobre_moldura {
+    height: 400px;
+    width: 240px;
+    padding: 0;
+  }
+
+  .sobre_text_content {
+    padding: 10px;
+  }
+
+  .sobre_text_content h1 {
+    font-size: 35px;
+  }
+
+  .card {
+    height: 300px;
+    width: 270px;
+    border-radius: 12px;
+    padding: 0% 4%;
+  }
+
+  .card p {
+    font-size: 10px;
+  }
+
+  .card i {
+    font-size: 30px;
+  }
+
+  .card h1 {
+    font-size: 15px;
+  }
 }
